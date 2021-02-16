@@ -1,0 +1,95 @@
+Outline轮廓线是在元素周围，border之外绘制的一条线，超出边框，以使元素“突出”
+
+常用property:
+
+outline-style
+outline-color
+outline-width
+outline-offset
+outline
+
+
+1)outline-style  轮廓线样式
+
+dotted -定义虚线轮廓
+dashed -定义虚线轮廓
+solid -定义了坚实的轮廓
+double -定义双重轮廓
+groove -定义3D沟槽轮廓
+ridge -定义3D脊形轮廓
+inset -定义3D插入轮廓
+outset -定义3D起始轮??廓
+none -没有轮廓
+hidden -定义一个隐藏的轮廓
+
+例子：
+p.dotted {outline-style: dotted;}
+p.dashed {outline-style: dashed;}
+p.solid {outline-style: solid;}
+p.double {outline-style: double;}
+p.groove {outline-style: groove;}
+p.ridge {outline-style: ridge;}
+p.inset {outline-style: inset;}
+p.outset {outline-style: outset;}
+
+
+2)Outline Width 轮廓线宽度
+
+outline-width属性指定轮廓的宽度，并且可以具有以下值之一：
+
+thin (typically 1px)
+medium (typically 3px)
+thick (typically 5px)
+A specific size (in px, pt, cm, em, etc)
+
+例子：
+p.ex1 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: thin;
+}
+
+3)Outline Color 轮廓线颜色
+
+outline-color属性用于设置轮廓的颜色：
+
+name - specify a color name, like "red"
+HEX - specify a hex value, like "#ff0000"
+RGB - specify a RGB value, like "rgb(255,0,0)"
+HSL - specify a HSL value, like "hsl(0, 100%, 50%)"
+invert - performs a color inversion (which ensures that the outline is visible, regardless of color background)
+
+例子：
+p.ex1 {
+  border: 2px solid black;
+  outline-style: solid;
+  outline-color: red;
+}
+
+4)Outline Shorthand 简写
+
+outline属性是用于设置以下各个大纲属性的简写属性：
+
+outline-width
+outline-style （必需的）
+outline-color
+
+例子：
+
+p.ex1 {outline: dashed;}
+p.ex2 {outline: dotted red;}
+p.ex3 {outline: 5px solid yellow;}
+p.ex4 {outline: thick ridge pink;}
+
+
+5)Outline Offset 双边框补偿
+outline-offset属性在轮廓和元素的边缘之间添加空间
+
+例子：
+p {
+  margin: 30px;
+  border: 1px solid black;
+  outline: 1px solid red;
+  outline-offset: 15px;   里边框到外边框的距离
+}

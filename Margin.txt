@@ -1,0 +1,60 @@
+1) margin边距
+
+p {
+  margin-top: 100px;
+  margin-right: 100px;
+  margin-bottom: 150px;
+  margin-left: 80px;
+}
+
+简写，顺序为 top right bottom left:
+
+p {
+  margin: 25px 50px 75px 100px;
+}
+
+
+三个值，为 top, left and right, bottom
+p {
+  margin: 25px 50px 75px;
+}
+两个值,  为 top and bottom, left and right
+p {
+  margin: 25px 50px;
+}
+
+
+2) auto
+
+div {
+  width: 300px;
+  margin: auto;   水平居中
+  border: 1px solid red;
+}
+
+3) inherit 继承
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  border: 1px solid red;
+  margin-left: 100px;
+}
+
+p.ex1 {
+  margin-left: inherit;    继承div的边距数值
+}
+</style>
+</head>
+<body>
+
+<h2>Use of the inherit value</h2>
+<p>Let the left margin be inherited from the parent element:</p>
+
+<div>
+<p class="ex1">This paragraph has an inherited left margin (from the div element).</p>
+</div>
+
+</body>
+</html>

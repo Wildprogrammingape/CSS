@@ -1,0 +1,29 @@
+CSS “padding”属性用于定义border中的填充空间
+
+常用property:
+
+padding-top
+padding-right
+padding-bottom
+padding-left
+
+
+例子：
+
+div {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+
+简写：
+div {
+  padding: 25px 50px 75px 100px;   顺序为顺时针top, right, bottom, left
+}
+div {
+  padding: 25px 50px 75px;   top, left and right, bottom
+}
+div {
+  padding: 25px 50px;    top and bottom, left and right
+}
