@@ -1,0 +1,36 @@
+CSS高度和宽度值
+该height和width属性可能具有以下值：
+
+auto-这是默认设置。浏览器计算高度和宽度
+length -以px，cm等定义高度/宽度。
+% -定义包含块的百分比的高度/宽度           -- 好用
+initial -将高度/宽度设置为其默认值
+inherit -高度/宽度将从其父值继承
+
+1）
+
+例子：
+div {
+  height: 200px;
+  width: 50%;    -- 宽度占一半行
+  background-color: powderblue;
+}
+
+div {
+  height: 100px;     宽100px
+  width: 500px;      高 500px
+  background-color: powderblue;
+}
+
+
+2）最大宽度 / 高度
+
+该max-width属性用于设置元素的最大宽度。
+
+在max-width可以在规定的长度值，
+
+div {
+  max-width: 500px;
+  height: 100px;
+  background-color: powderblue;
+}
