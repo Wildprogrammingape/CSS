@@ -1,0 +1,33 @@
+基本结构：
+
+    h1      	 {color:     blue;     font-size:  12px;}
+
+selector	 property  value    property   value
+
+
+
+例子：
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  color: red;
+  text-align: center;
+} 
+</style>
+</head>
+<body>
+
+<p>Hello World!</p>
+<p>These paragraphs are styled with CSS.</p>
+
+</body>
+</html>
+
+解释：
+
+p is a selector in CSS (it points to the HTML element you want to style: <p>).
+color is a property, and red is the property value
+text-align is a property, and center is the property value
