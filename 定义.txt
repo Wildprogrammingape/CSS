@@ -1,0 +1,6 @@
+CSS stands for Cascading Style Sheets  
+
+CSS is the language we use to style an HTML document. 修饰HTML文本
+
+CSS describes how HTML elements should be displayed.  用于描述HTML内容如何显示
+
