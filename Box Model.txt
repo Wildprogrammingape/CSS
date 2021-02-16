@@ -1,0 +1,12 @@
+所有HTML元素都可以视为方框。在CSS中，谈论设计和布局时使用术语“Box Model”。
+
+CSS框模型实质上是一个包装每个HTML元素的框。它包括：页边距 margin，边框 border，填充 padding 和实际内容 content
+
+例子：
+
+div {
+  width: 300px;                          300px是content的宽度
+  border: 15px solid green;         15px是border的宽度
+  padding: 50px;   		 content到border四周的距离
+  margin: 20px;  		 border到四周的距离
+}

@@ -1,0 +1,85 @@
+常用的css background property:
+
+1) background-color       opacity 不透明度(0.1-1)
+2) background-image
+3) background-repeat
+4) background-attachment
+5) background-position
+
+
+例子:
+
+1) 背景颜色，不透明度
+
+div {
+  background-color: green;
+  opacity: 0.3;
+}
+
+div {
+  background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
+}
+
+
+2) background-image 背景图片
+<style>
+body {
+  background-image: url("paper.gif");
+}
+</style>
+
+
+3) background-repeat  背景图片重复
+
+<style>
+body {
+  background-image: url("img_tree.png");
+
+  background-repeat: repeat-x;  水平重复
+  background-repeat: repeat-y;  垂直重复
+
+  background-repeat: no-repeat;  不重复
+  background-position: right top; 背景图片右上方
+  margin-right: 200px;                 文本到右边的边距
+}
+</style>
+
+4) background-attachment  背景图片滚动时候是否固定
+
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+
+  background-attachment: fixed;    背景图片固定，滚动时还在
+  background-attachment: scroll;    背景图片滚动会消失
+}
+
+5) background-position 背景图片初始位置
+
+<style>
+body { 
+  background-image: url('w3css.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;      居中
+}
+</style>
+
+6) shorthand 简写
+
+当写如下
+
+body {
+  background-color: #ffffff;
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+可直接简写为
+
+body {
+  background: #ffffff url("img_tree.png") no-repeat right top;
+}
+
