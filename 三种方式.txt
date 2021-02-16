@@ -1,0 +1,73 @@
+1. External CSS
+-- 外部CSS文件
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="mystyle.css"> (rel用来表示当前文档和链接的文档的关系，href为hypertext reference 链接地址)
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+"mystyle.css" 中：
+
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+
+2. Internal CSS  
+
+-- <style>在<head>中间
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: linen;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+} 
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+3.Inline CSS
+-- element 的 "style"  attribute
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="color:blue;text-align:center;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
+
+</body>
+</html>
+
+
+优先级顺序：
+
+最高： inline
+其次： external and internal style sheet
+最后： browser default
+
+因此，当冲突时候，inline style会 override 其他两种style方式
