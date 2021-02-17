@@ -1,0 +1,13 @@
+Opacity 不透明度 (0-1)
+
+
+图片不透明度为0.5，鼠标悬停时为1：
+
+
+img {
+  opacity: 0.5;
+}
+
+img:hover {
+  opacity: 1.0;
+}
