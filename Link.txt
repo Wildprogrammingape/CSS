@@ -1,0 +1,70 @@
+1)Link
+HTML语法：
+
+<a href="default.asp" target="_blank">This is a link</a>
+
+可以用各种CSS property进行修饰，如 ( color颜色, font-family字体, background-color背景颜色, text-decoration是否去除下划线).
+
+2) 根据状态state进行装饰
+
+In addition, links can be styled differently depending on what state they are in.
+
+The four links states are:
+
+a:link - a normal, unvisited link
+a:visited - a link the user has visited
+a:hover - a link when the user mouses over it
+a:active - a link the moment it is clicked
+
+例子：
+
+/* unvisited link */   正常
+a:link {
+  color: red;   
+}
+
+/* visited link */    已访问
+a:visited {
+  color: green;
+}
+
+/* mouse over link */   鼠标悬停
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */   鼠标选中
+a:active {
+  color: blue;
+}
+
+
+3) 漂亮的按钮Link例子
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a:link, a:visited {
+  background-color: lightblue;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+</style>
+</head>
+<body>
+
+<h2>Link Button</h2>
+<p>A link styled as a button:</p>
+<a href="default.asp" target="_blank">This is a link</a>
+
+</body>
+</html>

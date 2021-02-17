@@ -1,0 +1,72 @@
+Table常用的CSS 指令：
+
+1) Table border边框相关指令：
+
+--"border" 添加边框
+
+table, th, td {
+  border: 1px solid black;
+}
+
+--"width" 表格宽度
+
+table {
+  width: 100%;
+}
+
+--"border-collapse"单边框
+
+table {
+  border-collapse: collapse;
+}
+
+2) Table size 尺寸
+
+--"width"
+
+table {
+  width: 100%;
+}
+--"height"
+
+th {
+  height: 70px;
+}
+
+4) Table Alignment 对齐方式
+
+-- "text-align" 水平对齐方式
+
+td {
+  text-align: center;
+}
+
+-- "vertical-align" 竖直对齐方式
+
+td {
+  height: 50px;
+  vertical-align: bottom;
+}
+
+5) Table style 样式
+
+-- "padding"
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+--"border-bottom"水平分割线
+
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+
+--":hover"悬停
+
+tr:hover {background-color: #f5f5f5;}
+
+6) 
+
+""

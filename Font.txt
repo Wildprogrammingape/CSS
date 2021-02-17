@@ -1,0 +1,142 @@
+1) Font family
+在CSS中，我们使用font-family属性来指定文本的字体。
+
+该font-family属性应包含多个字体名称作为“后备”系统，以确保浏览器/操作系统之间的最大兼容性。以所需的字体开始，以通用系列结束（如果没有其他可用字体，则让浏览器选择通用系列中的相似字体）。字体名称应以逗号分隔。
+
+.p1 {
+  font-family: "Times New Roman", Times, serif;   首选Times New Roman字体，没有就用后两个备选字体
+}
+
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+2) 常用字体
+
+The following list are the best web safe fonts for HTML and CSS:
+
+Arial (sans-serif)
+*Verdana (sans-serif)
+Helvetica (sans-serif)
+Tahoma (sans-serif)
+Trebuchet MS (sans-serif)
+*Times New Roman (serif)
+Georgia (serif)
+Garamond (serif)
+*Courier New (monospace)
+Brush Script MT (cursive)
+
+3) 常用备用字体
+Below are some commonly used font fallbacks, organized by the 5 generic font families:
+
+Serif
+Sans-serif
+Monospace
+Cursive
+Fantasy
+
+4) Font Style 
+
+--"font-style"属性主要用于指定斜体文本:
+
+normal - The text is shown normally   正常
+italic - The text is shown in italics      斜体
+oblique - The text is "leaning" (oblique is very similar to italic, but less supported)   粗斜体
+
+p.normal {
+  font-style: normal;
+}
+
+p.italic {
+  font-style: italic;
+}
+
+p.oblique {
+  font-style: oblique;
+}
+
+--"font-weight"属性指定字体的粗细：
+
+p.normal {
+  font-weight: normal;  正常
+}
+
+p.thick {
+  font-weight: bold;    加粗
+}
+
+--"font-variant"属性指定是否以小写字体显示文本:
+
+p.normal {
+  font-variant: normal;   正常
+}
+
+p.small {
+  font-variant: small-caps;   小写字体大写字母
+}
+ 
+5) "font-size" 字体大小
+
+大小单位有px像素, em(1em=16px)，%百分比，vw(viewport) 遵循浏览器窗口大小
+
+h1 {
+  font-size: 40px;
+}
+
+h1 {
+  font-size: 2.5em; /* 40px/16=2.5em */
+}
+
+body {
+  font-size: 100%;
+}
+
+<h1 style="font-size:10vw">Hello World</h1>
+
+6)Font google  谷歌提供的字体
+
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+<style>
+body {
+  font-family: "Trirong", serif;
+}
+</style>
+
+7) 漂亮的样式例子
+
+body {
+  background-color: black;
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  color: gray;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: 60px;
+  color: white;
+}
+</head>
+
+8) Font shorthand 简写
+
+The font property is a shorthand property for:
+
+font-style
+font-variant
+font-weight
+font-size  (required)
+font-family (required)
+
+p.a {
+  font: 20px Arial, sans-serif;
+}
+
+p{
+ font: italic 20px Verdana;    (是否斜体italic,是否加粗bold, 大小size，字体family)
+}
