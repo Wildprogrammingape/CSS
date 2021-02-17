@@ -1,0 +1,41 @@
+Overflow用于文本太大，指定区域放不下的情况：
+
+该overflow属性具有以下值：
+
+visible- 默认。溢出没有被修剪。内容在元素框外渲染
+hidden -溢出被裁剪，其余内容将不可见
+scroll -剪辑了溢出，并添加了滚动条以查看其余内容
+auto-与相似scroll，但仅在必要时添加滚动条
+
+1) "visible"为默认情况，这意味着它不会被裁剪，而是在元素框外渲染：
+
+div {
+  width: 200px;
+  height: 50px;
+  background-color: #eee;
+  overflow: visible;
+}
+
+2) "hidden" 隐藏剩余内容
+
+div {
+  overflow: hidden;
+}
+
+3) "scroll" 滚动查看剩余内容
+
+div {
+  overflow: scroll;
+}
+
+4) "auto" 与scroll相似，在必要时加滚动条
+
+5) overflow-x和overflow-y特性指定是否只是水平或垂直地改变的内容溢出
+
+"overflow-x"添加水平滚动条
+"overflow-y"添加垂直滚动条
+
+div {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: scroll; /* Add vertical scrollbar */
+}
