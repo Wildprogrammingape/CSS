@@ -1,0 +1,62 @@
+常用对齐方式
+
+1) Element Center Align  元素居中对齐
+
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+
+2) Text Center Align 文本居中对齐
+
+.center {
+  text-align: center;
+  border: 3px solid green;
+}
+
+3) Image Center Align 图片居中对齐
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+4) Left and Right Align 左右对齐
+
+用position:
+
+.right {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+用float:
+.right {
+  float: right;
+  width: 300px;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+
+5) Center Vertically 垂直居中
+
+.center {
+  padding: 70px 0;
+  border: 3px solid green;
+}
+
+5) Center Vertically and Horizontally 水平垂直居中
+
+.center {
+  padding: 70px 0;
+  border: 3px solid green;
+  text-align: center;
+}
