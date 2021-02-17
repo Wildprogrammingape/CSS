@@ -1,0 +1,34 @@
+combinator组合器为(space   >   +   ~)四种，搭配selector使用，来选取需要的element
+
+CSS中有四种不同的组合器：
+
+1) 后代选择器（空格）
+2) 子选择器（>）
+3) 相邻兄弟选择器（+）
+4) 一般同级选择器（?）
+
+
+
+1) Descendant Selector 后代选择器，选中后代所有元素
+
+div p {  			选中div中的所有p
+  background-color: yellow;   
+}
+
+2) Child Selector (>) 子选择器，只选中下一级单位
+
+div > p {			选中比div小一级单位
+  background-color: yellow;
+}
+
+3) Adjacent Sibling Selector (+)   相邻兄弟选择器，选中紧随其后单位
+
+div + p {			只选中紧随div后的p
+  background-color: yellow;
+}
+
+4) General Sibling Selector (~) 一般同级选择器，选中所有同级单位
+
+div ~ p {			选中与div同级的所有p
+  background-color: yellow;
+}
