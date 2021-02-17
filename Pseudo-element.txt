@@ -1,0 +1,28 @@
+所有CSS伪元素：
+
+Selector		Example		Example description
+::after		p::after		Insert something after the content of each <p> element    
+::before		p::before		Insert something before the content of each <p> element
+::first-letter	p::first-letter	Selects the first letter of each <p> element
+::first-line		p::first-line	Selects the first line of each <p> element
+::marker		::marker		Selects the markers of list items
+::selection		p::selection	Selects the portion of an element that is selected by a user
+
+
+
+例子：
+
+p::first-line {	selector选中第一行
+  color: #ff0000;
+  font-variant: small-caps;
+}
+
+p::first-letter {	第一个字母
+  color: #ff0000;
+  font-size: xx-large;
+}
+
+
+h1::before {	在h1之前
+  content: url(smiley.gif);
+}
