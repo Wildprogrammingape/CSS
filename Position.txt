@@ -1,0 +1,118 @@
+"Position"用来布局
+
+该position属性指定用于元素的定位方法的类型。
+
+有五个不同的位置值：
+
+static
+relative
+fixed
+absolute
+sticky
+
+然后使用top，bottom，left和right属性定位element。但是，除非position 先设置该属性，否则这些属性将不起作用。根据位置值，它们的工作方式也不同。
+
+1) position: static; 静态位置
+
+HTML元素默认情况下处于静态位置
+
+div.static {
+  position: static;
+  border: 3px solid #73AD21;
+}
+
+2) position: relative; 相对位置， top，right，bottom和left属性将导致其偏离
+
+div.relative {
+  position: relative;
+  left: 30px;
+  border: 3px solid #73AD21;
+}
+3) position: fixed; 相对位置viewport，这意味着即使滚动页面，它也始终位于同一位置。top，right，bottom和left属性用于定位元素。
+
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+
+4) position: absolute; 相对于最近的祖先位置，或相对于HTML页面位置
+
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+}
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+
+5) position: sticky; 根据用户的滚动位置
+
+div.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: green;
+  border: 2px solid #4CAF50;
+}
+
+
+6) z-index: -1    重叠，用于将图片放在文字后
+
+img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+7) 在图中固定文字练习：
+
+相对于"container"，将元素的“ topleft”从左侧放置30px，从顶部放置15px。
+
+Position the element with the "topleft" class 30px from the left, and 15px from the top, relative to its container.
+
+代码：
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.container {
+  position: relative;
+}
+
+.topleft {
+  position: absolute;
+  left: 30px;
+  top: 15px;
+  font-size: 18px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="img_5terre.jpg" alt="Cinque Terre" width="1000" height="300">
+  <div class="topleft">Top Left</div>
+</div>
+
+</body>
+</html>
